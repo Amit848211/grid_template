@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-family:"Barlow Semi Condensed";
+    font-weight:0.8rem;
+    background-color: hsl(210 46% 95%);
+}
+.container{
+    margin-top: 30px;
+    margin-left: 12%;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    
+    height: 680px;
+    display: grid;
+    /* gap: 1.5rem; */
+    grid-template-columns: repeat(4,23%);
+    grid-template-rows: repeat(2,48%);
+}
+/* .container_item:nth-child(1) {
+    grid-area: one;
+} */
+.container_item{
+    font-size:500;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(217 19% 35% / 0.25);
+}
+.container_item.first{
+    background-image: url(./bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+    background-color: #7541C8;
+    grid-column: 1/3;
+    grid-row: 1/1;
+    
+}
+.container_item.third{
+    grid-column: 4/5;
+    grid-row: 1/3;
+    flex-wrap: nowrap;
+    height:618px;
+    margin-bottom: 20px;
+    
+}
+.container_item.third h2,.container_item.third > p:first-of-type{
+    color: #19212E;
+}
+.container_item.fourth{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    /* height: 100%; */
+   
+    
+}
+.container_item.fifth h2,.container_item.fifth > p:first-of-type{
+    color: #808998;
+}
+.flex{
+    display: flex;
+    gap: 1rem;
+}
+img{
+    width: 1.75rem;
+    border-radius: 50%;
+    max-width: 100%;
+    display: block;
+}
+.container_item > p:first-of-type{
+    font-size:1.25rem;
+    line-height: 1.2;
+    color: white;
+    margin-top: 0.5rem;
+}
+.container_item > p:last-of-type{
+    opacity: 1;
+    margin-top: 0.4em;
+    color: #D3C2ED;
+}
+h2{
+    font-size: 0.8rem;
+    font-weight:0.8rem ;
+    line-height: 1;
+    color: white;
+}
+.position{
+    opacity: 0.5;
+    font-size: 0.7rem;
+    color: #D3C2ED;
+    margin-top: 0.2rem;
+   
+    
+}
+.container_item.second{
+background-color: #48556A;
+}
+.container_item.third{
+background-color: #FFFFFF;
+}
+.container_item.fourth{
+background-color: #19212E;
+}
+.container_item.fifth{
+background-color: #FFFFFF;
+}
+.container_item.third h2,.container_item.third > p:first-of-type{
+    color: #19212E;
+
+}
+.container_item.third > p:last-of-type{
+    font-size: 0.92rem;
+}
